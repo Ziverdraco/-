@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: -webkit-linear-gradient(red,
+                    orange,
+                    yellow,
+                    cyan,
+                    purple);
+        }
+
+        .first {
+            width: 700px;
+            height: 400px;
+            border: 10px solid #000;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .wrap {
+            width: 600%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            animation: banner2 10s 3s linear infinite;
+        }
+
+        .wrap>img {
+            width: 16.66666%;
+            height: 100%;
+            font-size: 200px;
+            line-height: 400px;
+            text-align: center;
+            background-color: red;
+            color: #fff;
+            float: left;
+        }
+
+        /* 无限间隔轮播图 */
+        @keyframes banner2 {
+            0% {
+                left: 0;
+            }
+
+            5% {
+                left: -100%;
+            }
+
+            20% {
+                left: -100%;
+            }
+
+            25% {
+                left: -200%;
+            }
+
+            40% {
+                left: -200%;
+            }
+
+            45% {
+                left: -300%;
+            }
+
+            60% {
+                left: -300%;
+            }
+
+            65% {
+                left: -400%;
+            }
+
+            80% {
+                left: -400%;
+            }
+
+            85% {
+                left: -500%;
+            }
+
+            100% {
+                left: -500%;
+            }
+        }
+
+        .kk {
+            width: 700px;
+            height: 400px;
+            /* background-color: cyan; */
+            border: 5px solid #000;
+            font-size: 20px;
+            margin: 10px auto;
+        }
+
+
+        p{
+            margin: 0;
+        }
+        .article{
+            width: 700px;
+            border: 2px solid black;
+            margin: 10px auto;
+        }
+        .article img{
+            float: left;
+            margin-bottom: 10px;
+            border: 1px solid #000;
+        }
+        .article p{
+            border: 1px solid red;
+        }
+
+        .second{
+            margin: 10px 0;
+        }
+
+
+        table {
+            /* 支持设置宽高 */
+            width: 55%;
+            border: 5px solid #000;
+            /* 表格边框坍塌，取消双边框 */
+            border-collapse: collapse;
+            text-align: center;
+            margin: auto;
+        }
+
+        thead {
+            font-weight: bold;
+        }
+
+        td,
+        th {
+            border: 3px solid #000;
+            padding: 10px 20px;
+        }
+
+        .one {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+
+
+
+        a {
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+            display: inline-block;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>1.计算机学科各个课程之间的关系</h1>
+        <!-- 轮播图的可视区域 -->
+        <div class="first">
+            <!-- 图片父级, 用于整体移动图片 -->
+            <div class="wrap">
+                <img src="./1.jpg" alt="">
+                <img src="./1.jpg" alt="">
+                <img src="./1.jpg" alt="">
+                <img src="./1.jpg" alt="">
+                <img src="./1.jpg" alt="">
+                <img src="./1.jpg" alt="">
+            </div>
+        </div>
+
+
+        <div class="second">
+            <h1>2.我对计算机专业的认识</h1>
+            <div class="article">
+                <img src="./2.jpg" width="500" alt="">
+                <p class="content">
+                    &emsp;&emsp;经过大一上学期一个学期的学习，我对计算机有了一个初步的认识。不同于之前利用电脑来进行社交娱乐，我更加深入的了解了计算机的工作原理。通过学习计算机语言，了解计算机结构，我第一次接触到了计算机的精彩世界，原来我们看到的精彩网页，动画都是由一行行代码组成的。计算机不再是我对其一窍不通的机器，而是一个能够学习运用的工具。计算机极大的方便了我们的生活，让我们的社会处于信息化时代。自1946年第一台计算机诞生以来，人类的社会便进入飞速发展的阶段，计算机的诞生与运用在人类历史上留下了浓墨重彩的一笔，并且将继续造福人类，为人类社会的发展做贡献。
+                </p>
+            </div>
+        </div>
+
+        <div class="thr">
+            <h1>3.学业规划表</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <td>时间</td>
+                        <td>任务</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>大一</td>
+                        <td>适应大学生活 加入社团 多认识朋友
+                            过四六级
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>大二</td>
+                        <td>分流进入电气专业 托福95+</td>
+                    </tr>
+                    <tr>
+                        <td>大三</td>
+                        <td>争取保研机会 准备考研
+                        大学四年始终坚持体育锻炼，提高足球技术</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+        <div class="fou">
+            <h1>4.参考资料</h1>
+            <div class="f">
+                <a href="https://www.csdn.net/">CSDN官网</a>
+                <a href='https://www.runoob.com'>菜鸟教程官网</a>
+                <a href='https://www.lib.xjtu.edu.cn'>西安交通大学图书馆</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
